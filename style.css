@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap%27');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE2NjUxNDIyMDY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080');
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-card{
+    padding:50px 60px;
+    background-color: #111111d0;
+    color:white;
+    border-radius: 30px;
+    width: 45%;
+    height:100%; 
+    margin-top: 7%;
+}
+.search-weather{
+    margin-bottom: 30px;
+}
+.search-bar{
+    border-radius: 30px;
+    background-color: #333333;
+    border:none;
+    padding:15px 20px;
+    width: 490px;
+    color:white;
+}
+
+.search-btn{
+    border-radius:50%;
+    background-color: #333333;
+    color:white;
+    padding:10px;
+    border:none;
+    height: 53px;
+    width: 51px;
+    cursor: pointer;
+}
+
+.heading{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.6;
+    text-align: left;
+    color:white;
+}
+
+.weather,.cloudy,.humidity,.wind-speed{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: left;
+    color:white;
+}
+
+input{
+    font-size: 20px;
+}
+
+@media(max-width:600px){
+    .container-card {
+        padding: 40px 31px;
+        width: 70%;
+        margin-top:50%;
+    }
+
+    .search-bar {
+         width: 160px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .weather, .cloudy, .humidity, .wind-speed {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:600px) and (max-width:1100px){
+    .container-card {
+        padding: 50px 50px;
+        width: 75%;
+        margin-top:35%;
+    }
+
+    .search-bar {
+        border-radius: 30px;
+        background-color: #333333;
+        border: none;
+        padding: 25px 20px;
+        width: 455px;
+        color: white;
+    }
+
+    .search-btn {
+        border-radius: 50%;
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+        border: none;
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media(max-width:320px){
+    .container-card {
+        padding: 40px 17px;
+        width: 81%;
+        margin-top: 50%;
+    }
+
+    .search-bar {
+        width: 126px;
+    }
+}
